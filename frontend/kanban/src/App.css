@@ -1,0 +1,109 @@
+/* Estilo geral da página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e3a842;
+}
+
+/* Centralizar o formulário na parte superior da página */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  margin-left: 40%;
+}
+
+/* Inputs e Botão do formulário */
+form input, form select, form button {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #060000;
+  
+}
+
+form button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Layout das colunas */
+div[style*="display: flex"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+
+
+.prontas{
+  width: 30%;
+  background-color: #00d812;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.fazendo{
+  width: 30%;
+  background-color: #0082d8;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.afazer{
+  width: 30%;
+  background-color: #d80000;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+/* Estilo dos títulos das colunas */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilo das tarefas */
+div[style*="padding: 10px"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #000000;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Adicionar espaçamento entre colunas no layout */
+div[style*="justify-content: space-between"] > div {
+  margin-right: 10px;
+}
+
+div[style*="justify-content: space-between"] > div:last-child {
+  margin-right: 0;
+}
+
+
